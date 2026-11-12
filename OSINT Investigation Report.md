@@ -282,9 +282,9 @@ I learned that Shodan collects information about internet-connected systems and 
 
 The displayed vulnerability associations were treated as potential matches only. I did not independently verify or exploit any vulnerabilities.
 
-![Shodan Internet Exposure Screenshot1](images/06.1-shodan-results.png)
-![Shodan Internet Exposure Screenshot2](images/06.2-shodan-results.png)
-![Shodan Internet Exposure Screenshot3](images/06.3-shodan-results.png)
+![Shodan Internet Exposure Screenshot1](images/06.1-shodan-result.png)
+![Shodan Internet Exposure Screenshot2](images/06.2-shodan-result.png)
+![Shodan Internet Exposure Screenshot3](images/06.3-shodan-result.png)
 
 ## 4.7 Third-Party and Service Mapping
 
