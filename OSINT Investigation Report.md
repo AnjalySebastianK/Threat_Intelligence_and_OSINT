@@ -72,7 +72,9 @@ The lookup also showed that the domain uses Contabo nameservers.
 
 I learned that a registrar, DNS provider and web hosting provider are not necessarily the same organisation.
 
-![ICANN Lookup Screenshot](images/01-icann-lookup.png)
+![ICANN Lookup Screenshot1](images/01.1-icann-lookup.png)
+![ICANN Lookup Screenshot2](images/01.2-icann-lookup.png)
+![ICANN Lookup Screenshot3](images/01.3-icann-lookup.png)
 
 ## 4.2 DNS Enumeration
 
@@ -110,7 +112,11 @@ The AAAA and TXT queries returned NOERROR responses with zero answer records. An
 
 This activity helped me understand different DNS record types and how they provide information about domain infrastructure.
 
-![DNS Enumeration Screenshot](images/02-dns-enumeration.png)
+![DNS Enumeration Screenshot1](images/02.1-dns-enumeration.png)
+![DNS Enumeration Screenshot2](images/02.2-dns-enumeration.png)
+![DNS Enumeration Screenshot3](images/02.3-dns-enumeration.png)
+![DNS Enumeration Screenshot4](images/02.4-dns-enumeration.png)
+![DNS Enumeration Screenshot5](images/02.5-dns-enumeration.png)
 
 ## 4.3 Passive Subdomain Enumeration
 
@@ -147,7 +153,8 @@ This exercise helped me understand how passive subdomain enumeration can provide
 
 The discovered hostnames were not all independently verified as active services.
 
-![Amass Subdomain Enumeration Screenshot](images/03-amass-subdomains.png)
+![Amass Subdomain Enumeration Screenshot1](images/03.1-amass-subdomains.png)
+![Amass Subdomain Enumeration Screenshot2](images/03.2-amass-subdomains.png)
 
 ## 4.4 Certificate Transparency Investigation
 
@@ -157,7 +164,7 @@ Next, I used crt.sh to investigate publicly logged SSL/TLS certificates.
 
 I searched for:
 
-`%.sjcetpalai.ac.in`
+`.sjcetpalai.ac.in`
 
 The search returned multiple certificate records associated with the target domain.
 
@@ -193,7 +200,8 @@ I learned that Certificate Transparency logs can help identify hostnames that ma
 
 I also learned that a certificate appearing in CT logs does not necessarily mean that the hostname is currently active.
 
-![Certificate Transparency Screenshot](images/04-certificate-transparency.png)
+![Certificate Transparency Screenshot1](images/04.1-certificate-transparency.png)
+![Certificate Transparency Screenshot2](images/04.2-certificate-transparency.png)
 
 ## 4.5 SSL/TLS Certificate Analysis
 
@@ -226,7 +234,9 @@ A hostname mismatch can cause browsers to display security warnings or reject th
 
 However, I did not attempt to modify or test the website's certificate configuration because I did not have permission.
 
-![SSL/TLS Certificate Analysis Screenshot](images/05-ssl-certificate.png)
+![SSL/TLS Certificate Analysis Screenshot1](images/05.1-ssl-certificate.png)
+![SSL/TLS Certificate Analysis Screenshot2](images/05.2-ssl-certificate.png)
+![SSL/TLS Certificate Analysis Screenshot3](images/05.3-ssl-certificate.png)
 
 ## 4.6 Internet Exposure Analysis
 
@@ -272,8 +282,9 @@ I learned that Shodan collects information about internet-connected systems and 
 
 The displayed vulnerability associations were treated as potential matches only. I did not independently verify or exploit any vulnerabilities.
 
-![Shodan Internet Exposure Screenshot](images/06-shodan-results.png)
-
+![Shodan Internet Exposure Screenshot1](images/06.1-shodan-results.png)
+![Shodan Internet Exposure Screenshot2](images/06.2-shodan-results.png)
+![Shodan Internet Exposure Screenshot3](images/06.3-shodan-results.png)
 
 ## 4.7 Third-Party and Service Mapping
 
@@ -298,7 +309,10 @@ From this activity, I understood that organisations may use different external p
 
 These relationships provide useful information about third-party service dependencies.
 
-![CNAME Mapping Screenshot](images/07-third-party-mapping.png)
+![CNAME Mapping Screenshot1](images/07.1-third-party-mapping.png)
+![CNAME Mapping Screenshot2](images/07.2-third-party-mapping.png)
+![CNAME Mapping Screenshot3](images/07.3-third-party-mapping.png)
+![CNAME Mapping Screenshot4](images/07.4-third-party-mapping.png)
 
 ## 4.8 robots.txt Inspection
 
@@ -331,7 +345,7 @@ I learned that robots.txt does not provide access control or protect restricted 
 The presence of a disallowed path does not automatically indicate a security vulnerability.
 
 ![robots.txt Screenshot](images/08-robots-txt.png)
-<!-- Add your robots.txt output screenshot here -->
+
 
 ## 4.9 HTTP Header Analysis
 
@@ -398,7 +412,10 @@ The search results helped me understand how Google indexes publicly available we
 
 I also learned that Google does not index every file or page on a website. Therefore, the absence of a search result does not prove that a resource does not exist.
 
-![Google Search OSINT Screenshot](images/10-google-search.png)
+![Google Search OSINT Screenshot1](images/10.1-google-search.png)
+![Google Search OSINT Screenshot2](images/10.2-google-search.png)
+![Google Search OSINT Screenshot3](images/10.3-google-search.png)
+![Google Search OSINT Screenshot4](images/10.4-google-search.png)
 
 # 5. Tools Used
 
